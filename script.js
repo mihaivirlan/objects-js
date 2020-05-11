@@ -433,4 +433,121 @@
 
 
 
+    //Creating Properties with defineProperty()
+// var account = {
+//     cash: 12000,
+//     withdraw: function(amount) {
+//         this.cash -= amount;
+//         console.log('Withdraw ' + amount + ', new cash reserve is: ' + this.cash);
+//     }
+// };
+// account.withdraw(1000);
+
+// var account = {
+//     cash: 12000,
+//     withdraw: function(amount) {
+//         this.cash -= amount;
+//         console.log('Withdraw ' + amount + ', new cash reserve is: ' + this.cash);
+//     }
+// };
+// Object.defineProperty(account, 'deposit', {
+//     value: function(amount) {
+//         this.cash += amount;
+//     }
+// });
+// account.deposit(3000);
+// account.withdraw(1000);
+
+// var account = {
+//     cash: 12000,
+//     withdraw: function(amount) {
+//         this.cash -= amount;
+//         console.log('Withdraw ' + amount + ', new cash reserve is: ' + this.cash);
+//     }
+// };
+// Object.defineProperty(account, 'name', {
+//     value: 'ID000-1'
+// });
+// console.log(account.name);
+// account.name = 'ID000-3';
+// console.log(account.name);
+
+// var account = {
+//     cash: 12000,
+//     withdraw: function(amount) {
+//         this.cash -= amount;
+//         console.log('Withdraw ' + amount + ', new cash reserve is: ' + this.cash);
+//     }
+// };
+// Object.defineProperty(account, 'name', {
+//     value: 'ID000-1',
+//     writable: true
+// });
+// console.log(account.name);
+// account.name = 'ID000-3';
+// console.log(account.name);
+
+// var account = {
+//     cash: 12000,
+//     withdraw: function(amount) {
+//         this.cash -= amount;
+//         console.log('Withdraw ' + amount + ', new cash reserve is: ' + this.cash);
+//     }
+// };
+// Object.defineProperty(account, 'name', {
+//     get: function() {
+//         return 'Hello';
+//     }
+// });
+// console.log(account.name);
+// account.name = 'ID000-3';
+// console.log(account.name);
+
+// var account = {
+//     cash: 12000,
+//     _name: 'Default',
+//     withdraw: function(amount) {
+//         this.cash -= amount;
+//         console.log('Withdraw ' + amount + ', new cash reserve is: ' + this.cash);
+//     }
+// };
+// Object.defineProperty(account, 'name', {
+//     get: function() {
+//         return this._name;
+//     },
+//     set: function(name) {
+//         this._name = name;
+//     }
+// });
+// console.log(account.name);
+// account.name = 'ID000-3';
+// console.log(account.name);
+
+// var account = {
+//     cash: 12000,
+//     _name: 'Default',
+//     withdraw: function(amount) {
+//         this.cash -= amount;
+//         console.log('Withdraw ' + amount + ', new cash reserve is: ' + this.cash);
+//     }
+// };
+// Object.defineProperty(account, 'name', {
+//     get: function() {
+//         return 'Hello';
+//     },
+//     set: function(name) {
+//         if (name == 'Max') {
+//             this._name = name;
+//         }
+//     }
+// });
+// console.log(account.name);
+// account.name = 'ID000-3';
+// console.log(account.name);
+// console.log(account._name);
+
+
+
+
+
 
