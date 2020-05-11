@@ -205,13 +205,70 @@
 // };
 // person.greet();
 
+
+
+    //Prototypes in Action
+// var age = 30;
+// var person = {
+//     name: 'Max',
+//     age: 27,
+// };
+// Object.prototype.greet = function() {
+//     console.log('Hello there');
+// };
+// var max = Object.create(person)
+// console.log(max.name);
+
+// var age = 30;
+// var person = {
+//     name: 'Max',
+//     age: 27,
+// };
+// Object.prototype.greet = function() {
+//     console.log('Hello there');
+// };
+// var max = Object.create(person)
+// max.greet();
+
+// var age = 30;
+// var person = {
+//     name: 'Max',
+//     age: 27,
+// };
+// Object.prototype.greet = function() {
+//     console.log('Hello there');
+// };
+// var max = Object.create(person);
+// var anna = Object.create(person);
+// max.greet();
+// anna.greet();
+
+// var age = 30;
+// var person = {
+//     name: 'Max',
+//     age: 27,
+// };
+// Object.prototype.greet = function() {
+//     console.log('Hello there, I am ' + this.name + '!');
+// };
+// var max = Object.create(person);
+// var anna = Object.create(person);
+// anna.name = 'Anna';
+// max.greet();
+// anna.greet();
+
 var age = 30;
 var person = {
     name: 'Max',
     age: 27,
 };
 Object.prototype.greet = function() {
-    console.log('Hello there');
+    console.log('Hello there, I am ' + this.name + '!');
 };
-person.greet();
+var max = Object.create(person);
+var anna = Object.create(person);
+anna.name = 'Anna';
+max.greet();
+anna.greet();
+
 
