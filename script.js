@@ -409,6 +409,28 @@
 // }
 // obj.obfn.bind(person)();
 
+// function fn(message) {
+//     console.log(message + this);
+// }
+// var obj = {
+//     obfn: fn
+// };
+// var person = {
+//     name: 'Max'
+// }
+// obj.obfn.call(person, 'Hello');
+
+// function fn(message) {
+//     console.log(message + this);
+// }
+// var obj = {
+//     obfn: fn
+// };
+// var person = {
+//     name: 'Max'
+// }
+// obj.obfn.apply(person, ['Hello']);
+
 
 
 
