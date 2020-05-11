@@ -177,11 +177,41 @@
 // anotherPerson.name = 'Anna';
 // console.log(anotherPerson.age);
 
+
+
+    //Prototypes Introduction
+    //All objects in js have by default a prototype which is: Objects.prototype
+// var age = 30;
+// var person = {
+//     name: 'Max',
+//     age: 27,
+// };
+// console.log(person.__proto__);
+
+// var age = 30;
+// var person = {
+//     name: 'Max',
+//     age: 27,
+// };
+// console.log(person.toString());
+
+// var age = 30;
+// var person = {
+//     name: 'Max',
+//     age: 27,
+// };
+// Object.prototype.greet = function() {
+//     console.log('Hello there');
+// };
+// person.greet();
+
 var age = 30;
 var person = {
     name: 'Max',
     age: 27,
 };
-var anotherPerson = Object.create(person);
-anotherPerson.name = 'Anna';
-console.log(anotherPerson.age);
+Object.prototype.greet = function() {
+    console.log('Hello there');
+};
+person.greet();
+
