@@ -257,18 +257,103 @@
 // max.greet();
 // anna.greet();
 
-var age = 30;
-var person = {
-    name: 'Max',
-    age: 27,
-};
-Object.prototype.greet = function() {
-    console.log('Hello there, I am ' + this.name + '!');
-};
-var max = Object.create(person);
-var anna = Object.create(person);
-anna.name = 'Anna';
-max.greet();
-anna.greet();
+// var age = 30;
+// var person = {
+//     name: 'Max',
+//     age: 27,
+// };
+// Object.prototype.greet = function() {
+//     console.log('Hello there, I am ' + this.name + '!');
+// };
+// var max = Object.create(person);
+// var anna = Object.create(person);
+// anna.name = 'Anna';
+// max.greet();
+// anna.greet();
+
+
+
+    //Constructor Functions
+// function Person() {
+
+// }
+// var person = new Person();
+// person.name = 'Max';
+// console.log(person.__proto__ == Person.prototype);
+
+// function Person() {
+
+// }
+// Person.prototype.greet = function() {
+//     console.log('Hello');
+// }
+// var person = new Person();
+// person.name = 'Max';
+// person.greet();
+
+// function Person() {
+//     this.name = 'Max';
+// }
+// Person.prototype.greet = function() {
+//     console.log('Hello');
+// }
+// var person = new Person();
+// console.log(person.name);
+
+// function Person() {
+//     this.name = 'Max';
+//     this.greet = function() {
+//         console.log('Hello, I am ' + this.name);
+//     }
+// }
+// Person.prototype.greet = function() {
+//     console.log('Hello');
+// }
+// var person = new Person();
+// person.greet();
+
+// function Person() {
+//     this.name = 'Max';
+//     this.greet = function() {
+//         console.log('Hello, I am ' + this.name);
+//     }
+// }
+// Person.prototype.greet = function() {
+//     console.log('Hello');
+// }
+// var person = new Person();
+// person.name = 'Anna';
+// person.greet();
+
+// function Person() {
+//     this.name = 'Max';
+//     this.greet = function() {
+//         console.log('Hello, I am ' + this.name);
+//     }
+// }
+// Person.prototype.greet = function() {
+//     console.log('Hello');
+// }
+// var person = new Person();
+// person.name = 'Anna';
+// var anotherPerson = new Person();
+// person.greet();
+// anotherPerson.greet();
+
+// function Person() {
+//     this.name = 'Max';
+//     this.greet = function() {
+//         console.log('Hello, I am ' + this.name);
+//     }
+// }
+// Person.prototype.greet = function() {
+//     console.log('Hello');
+// }
+// var person = new Person();
+// person.name = 'Anna';
+// var anotherPerson = new Person();
+// person.greet();
+// anotherPerson.greet();
+
 
 
