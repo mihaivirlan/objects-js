@@ -548,6 +548,45 @@
 
 
 
+    //Important built-in Methods and Properties
+// var person = {
+//     name: 'Max',
+//     age: 27
+// }
+// delete person.name;
+// console.log(person.name);
+
+// var person = {
+//     name: 'Max',
+//     age: 27
+// }
+// console.log('name' in person);
+// //Specify a field 'name' as a string - it's very important, and 'in' keywork chech if 'name' field it's exist in 'person' object!
+
+// var person = {
+//     name: 'Max',
+//     age: 27,
+//     greet: function() {
+//         console.log('Hello');
+//     }
+// }
+// for (var field in person) {
+//     console.log(field);
+// }
+
+// var person = {
+//     name: 'Max',
+//     age: 27,
+//     greet: function() {
+//         console.log('Hello');
+//     }
+// }
+// for (var field in person) {
+//     console.log(person[field]);
+// }
+
+
+
 
 
 
